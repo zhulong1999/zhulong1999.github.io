@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>烛龙 - 带你走上网络之路</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="animate.min.css"/>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+
+	<body class="animated fadeIn">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Header -->
+			<header id="header" class="alt">
+				<h1>烛龙网络</h1>
+				<p>带你走上网络之路</p>
+			</header>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="javascript:;" class="active" data-id='header'>简介</a></li>
+					<li><a href="javascript:;" data-id='first'>特色</a></li>
+					<li><a href="javascript:;" data-id='second'>动态</a></li>
+					<li><a href="javascript:;" data-id='cta'>联系</a></li>
+				</ul>
+			</nav>
+			<!-- Main -->
+			<div id="main">
+				<!-- Introduction -->
+				<section id="intro" class="main">
+					<div class="spotlight">
+						<div class="content">
+							<header class="major">
+								<h2>个人工作室</h2>
+							</header>
+							<p>个人工作室创建于2018年8月1日，前身为已有1年运营历史的云服务，陌路工作室由陌路等核心开发人员组成。我们在多年的开发中已积累了丰富的经验。</p>
+						</div>
+						<span class="image"><img src="head.jpg" alt="" /></span>
+					</div>
+				</section>
+				<!-- First Section -->
+				<section id="first" class="main special">
+					<header class="major">
+						<h2>特色</h2>
+					</header>
+					<ul class="features">
+						<li>
+							<span class="icon major style1 fa-code"></span>
+							<h3>精通语言</h3>
+							<p>团队成员有多年的开发经验，熟悉至少两种或以上的开发语言，可胜任ASP、PHP、HTML等语言的开发任务。</p>
+						</li>
+						<li>
+							<span class="icon major style3 fa-thumbs-up"></span>
+							<h3>良好口碑</h3>
+							<p>团队成员均为历史悠久的原青枫云核心成员，我们在原社区的运营与相关开发的过程中已收到众多赞誉。</p>
+						</li>
+						<li>
+							<span class="icon major style5 fa-lock"></span>
+							<h3>安全可信</h3>
+							<p>我们永远坚持客户至上的原则，把客户的数据安全永远放在首位。未经客户同意，我们不会把项目泄露给第三方。</p>
+						</li>
+					</ul>
+				</section>
+				<!-- Second Section -->
+				<section id="second" class="main special">
+					<header class="major">
+						<h2>动态与项目</h2>
+					</header>
+					<ul class="statistics">
+						<li class="style1">
+							<span class="icon fa-users"></span>
+							<strong>10</strong> 成员
+						</li>
+						<li class="style2">
+							<span class="icon fa-gamepad"></span>
+							<strong>4</strong> 程序
+						</li>
+						<li class="style3">
+							<span class="icon fa-folder-open-o"></span>
+							<strong>4</strong> 项目
+						</li>
+						<li class="style4">
+							<span class="icon fa-code"></span>
+							<strong>89,526</strong> 代码
+						</li>
+					</ul>
+					<p><b>项目表</b></p>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th>名称</th>
+									<th>描述</th>
+									<th>状态</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>友联:我爱博客吧</td>
+									<td>专注于网络源码教程技术破解软件</td>
+									<td><a href="https://oeoyun.com/">官方</a></td>
+								</tr>
+								<tr>
+									<td>友联:</td>
+									<td>全自动采集简约影院。</td>
+									<td><a href="/">官方</a></td>
+								</tr>
+								<tr>
+									<td>友联:</td>
+									<td>免费不需要VIP就能看全网影视</td>
+									<td><a href="/">官方</a></td>
+								</tr>
+
+								<tr>
+									<td>友联</td>
+									<td>免费提供长期稳定的文档接口</td>
+									<td><a href="/">官方</a></td>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				<!-- Get Started -->
+				<section id="cta" class="main special">
+					<header class="major">
+						<h2>联系</h2>
+						<p>如果你有开发需要，欢迎随时联系我们！</p>
+						<p>联系方式QQ:979255869</p>
+					</header>
+				</section>
+			</div>
+			<!-- Footer -->
+			<footer id="footer" class=" " style="position: unset;top: auto;">
+				<p class="copyright">个人工作室 | <a href="http://www.rick1999.top/" target="_blank">烛龙影视</a> | <a href="https://github.com/zhulong1999"
+					 target="_blank">Github</a></p>
+			</footer>
+		</div>
+		<!-- <div id="float">
+			<h4>置顶</h4>
+		</div> -->
+	</body>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#nav li a').click(function(){
+				var that = $(this);
+				var data_id = that.attr('data-id');
+				$('html,body').animate({scrollTop:$("#"+data_id).offset().top});
+				$('#nav li a').removeClass('active');
+				that.addClass('active');
+			})
+			$(window).scroll(function(){
+				if(parseInt($(document).scrollTop()) >= parseInt($("#nav").offset().top)){
+					$("#nav").css({
+						'position':'fixed',
+						'top':0,
+						'z-index':999
+					})
+				}
+				if(parseInt($(document).scrollTop()) < 458){
+					console.log(1); 
+					$("#nav").css({
+						'position':'absolute',
+						'top':'auto'
+					})
+				}
+				
+			})
+		})
+	</script>	
+</html>
